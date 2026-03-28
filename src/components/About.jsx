@@ -32,13 +32,15 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I'm Mohammad Sajid Ansari, a skilled full-stack developer with
-        experience in JavaScript, TypeScript, Python, and Java. I specialize in
-        frameworks like React, Next.js, Node.js, and WordPress, along with cloud
-        services on AWS. I'm a quick learner who collaborates closely with
-        clients to create efficient, scalable, and user-friendly solutions that
-        solve real-world problems. Let's work together to bring your ideas to
-        life!
+        I'm Mohammad Sajid Ansari, a Senior Full Stack Developer from
+        Surat, India with nearly a decade of experience creating scalable,
+        high-performance web and mobile applications. I specialize in React,
+        Next.js, Node.js, Nest.js, WordPress, and AWS cloud services. Currently
+        leading development at Guzman y Gomez (Australia), building enterprise
+        ordering systems and admin panels. I've integrated payment gateways
+        like Stripe and PayPal, delivery platforms like UberEats and DoorDash,
+        and architected solutions handling thousands of daily transactions.
+        Let's work together to bring your ideas to life!
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

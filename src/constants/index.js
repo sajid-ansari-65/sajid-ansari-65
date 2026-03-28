@@ -6,112 +6,124 @@ const navLinks = [
 
 const services = [
   { title: "Full Stack Developer", icon: "🌐" },
-  { title: "WordPress Developer", icon: "📝" },
+  { title: "WordPress Expert", icon: "📝" },
   { title: "React / Next.js Developer", icon: "⚛️" },
   { title: "Cloud & DevOps (AWS)", icon: "☁️" },
 ];
 
 const technologies = [
-  { name: "HTML 5" },
-  { name: "CSS 3" },
   { name: "JavaScript" },
   { name: "TypeScript" },
   { name: "React JS" },
   { name: "Next JS" },
   { name: "Node JS" },
-  { name: "MongoDB" },
-  { name: "Three JS" },
-  { name: "Git" },
-  { name: "Docker" },
-  { name: "AWS" },
-  { name: "Python" },
-  { name: "Java" },
+  { name: "Nest JS" },
   { name: "WordPress" },
+  { name: "PHP" },
+  { name: "MongoDB" },
+  { name: "MySQL" },
+  { name: "AWS" },
+  { name: "Docker" },
+  { name: "Redux" },
+  { name: "Tailwind CSS" },
+  { name: "Git" },
 ];
 
 const experiences = [
   {
-    title: "Remote Freelancer Full Stack Developer",
-    company_name: "Freelance",
+    title: "Senior / Lead Web Developer",
+    company_name: "Guzman y Gomez (Australia)",
     iconBg: "#383E56",
-    date: "2020 - Present",
+    date: "June 2020 - Present",
     points: [
-      "Building and maintaining full-stack web applications using React.js, Node.js, and related technologies.",
-      "Developing custom WordPress themes and plugins for clients worldwide.",
-      "Implementing cloud solutions using AWS services including EC2, S3, Lambda, and RDS.",
-      "Collaborating with international clients to deliver high-quality, responsive web solutions.",
+      "Leading full-stack development in scrum teams for Australia's leading Mexican restaurant chain.",
+      "Built WordPress customizations and full-stack features using Node.js, Nest.js, and React.",
+      "Developed RESTful APIs and microservices for order processing flows integrated with UberEats, DoorDash, MenuLog, and Deliveroo.",
+      "Architected the Resto 365 Admin Panel and Online Ordering System handling thousands of daily orders.",
     ],
   },
   {
-    title: "WordPress Developer",
-    company_name: "Nandan Global",
+    title: "Senior WordPress Developer",
+    company_name: "Uplers (Remote)",
     iconBg: "#E6DEDD",
-    date: "2023",
+    date: "October 2020 - April 2021",
     points: [
-      "Developed and maintained WordPress websites for the company's clients.",
-      "Created custom themes and plugins to meet specific business requirements.",
-      "Optimized website performance and implemented SEO best practices.",
-      "Collaborated with the design team to implement pixel-perfect responsive designs.",
+      "Developed and maintained WordPress sites with custom theme and plugin development.",
+      "Implemented Figma-to-WordPress designs with pixel-perfect accuracy.",
+      "Customized WooCommerce stores with advanced e-commerce functionality.",
+      "Optimized website performance, SEO, and cross-browser compatibility.",
     ],
   },
   {
-    title: "Full Stack Web Developer",
-    company_name: "Self-Employed",
+    title: "Senior PHP Developer",
+    company_name: "CodeWorks Consulting",
     iconBg: "#383E56",
-    date: "2018 - 2020",
+    date: "June 2019 - October 2020",
     points: [
-      "Developed REST APIs using Node.js and Express.js with MongoDB and SQL databases.",
-      "Built interactive front-end applications using React.js and Angular.",
-      "Implemented authentication, authorization, and security best practices.",
-      "Deployed applications on cloud platforms including Heroku and AWS.",
+      "Built e-commerce platforms and WooCommerce-based solutions for clients like DollarSprout.",
+      "Created RESTful APIs and integrated third-party services for business automation.",
+      "Mentored junior developers and conducted code reviews to maintain high code quality.",
+      "Implemented CI/CD pipelines and automated testing workflows.",
+    ],
+  },
+  {
+    title: "PHP Developer",
+    company_name: "Lanet Team Software Solution",
+    iconBg: "#E6DEDD",
+    date: "October 2018 - May 2021",
+    points: [
+      "Developed WordPress, WooCommerce, and Laravel applications across multiple client projects.",
+      "Built projects including MuscleBox (fitness subscription), Digital Workshop Center, Upfit, and Fritz and Rose.",
+      "Implemented payment gateway integrations with Stripe, PayPal, and Razorpay.",
+      "Collaborated with cross-functional teams to deliver scalable web solutions.",
     ],
   },
 ];
 
 const projects = [
   {
-    name: "Score Board App",
+    name: "GYG Online Ordering",
     description:
-      "A real-time score tracking application built with TypeScript, featuring a clean and intuitive UI for tracking and managing scores across various games and competitions.",
+      "A full-scale online ordering system for Guzman y Gomez restaurants across Australia, handling thousands of daily orders with real-time menu management, payment processing, and delivery integration.",
     tags: [
-      { name: "typescript", color: "blue-text-gradient" },
-      { name: "react", color: "green-text-gradient" },
-    ],
-    source_code_link: "https://github.com/sajid-ansari-65/score-board",
-  },
-  {
-    name: "Todo API",
-    description:
-      "A robust RESTful API built with Node.js for managing tasks and to-do items, featuring CRUD operations, user authentication, and database integration with MongoDB.",
-    tags: [
+      { name: "react", color: "blue-text-gradient" },
       { name: "nodejs", color: "green-text-gradient" },
-      { name: "mongodb", color: "pink-text-gradient" },
-      { name: "expressjs", color: "blue-text-gradient" },
+      { name: "nestjs", color: "pink-text-gradient" },
     ],
-    source_code_link: "https://github.com/sajid-ansari-65/Todo-api-nodejs",
+    source_code_link: "https://order.guzmanygomez.com.au/",
   },
   {
-    name: "Portfolio Website",
+    name: "GYG Resto 365 Admin",
     description:
-      "A personal portfolio website showcasing skills, projects, and professional experience as a remote freelancer and full-stack developer, deployed on GitHub Pages.",
+      "An enterprise admin panel for managing restaurant operations, menus, staff, and order workflows for 200+ Guzman y Gomez locations with role-based access control.",
     tags: [
-      { name: "html", color: "orange-text-gradient" },
-      { name: "css", color: "blue-text-gradient" },
-      { name: "javascript", color: "green-text-gradient" },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "aws", color: "orange-text-gradient" },
     ],
-    source_code_link:
-      "https://github.com/sajid-ansari-65/sajid-ansari-65.github.io",
+    source_code_link: "https://www.guzmanygomez.com/",
   },
   {
-    name: "Slideshow Plugin",
+    name: "DollarSprout",
     description:
-      "A custom WordPress slideshow gallery plugin that provides an elegant way to display image galleries with smooth transitions and customizable settings.",
+      "A high-traffic personal finance blog and media platform built with WordPress, featuring custom theme development, podcast integration, and optimized for SEO performance.",
     tags: [
-      { name: "php", color: "pink-text-gradient" },
       { name: "wordpress", color: "blue-text-gradient" },
+      { name: "php", color: "pink-text-gradient" },
       { name: "javascript", color: "green-text-gradient" },
     ],
-    source_code_link: "https://github.com/sajid-ansari-65/slideshow-plugin",
+    source_code_link: "https://dollarsprout.com/",
+  },
+  {
+    name: "Capauth SSO Backend",
+    description:
+      "A Django-based Single Sign-On (SSO) authentication backend for Capabara, providing secure user authentication, session management, and API authorization across multiple services.",
+    tags: [
+      { name: "django", color: "green-text-gradient" },
+      { name: "python", color: "blue-text-gradient" },
+      { name: "rest-api", color: "pink-text-gradient" },
+    ],
+    source_code_link: "https://app.capabara.com/mycapabara",
   },
 ];
 
