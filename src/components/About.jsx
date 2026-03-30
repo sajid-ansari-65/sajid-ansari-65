@@ -1,55 +1,22 @@
-import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { services } from "../constants";
-import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
-
-const ServiceCard = ({ index, title, icon }) => (
-  <div className="xs:w-[250px] w-full">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
-    >
-      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
-        <span className="text-[64px]">{icon}</span>
-        <h3 className="text-white text-[20px] font-bold text-center">
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </div>
-);
+import "./styles/About.css";
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
-      >
-        I'm Mohammad Sajid Ansari, a Senior Full Stack Developer from
-        Surat, India with nearly a decade of experience creating scalable,
-        high-performance web and mobile applications. I specialize in React,
-        Next.js, Node.js, Nest.js, WordPress, and AWS cloud services. Currently
-        leading development at Guzman y Gomez (Australia), building enterprise
-        ordering systems and admin panels. I've integrated payment gateways
-        like Stripe and PayPal, delivery platforms like UberEats and DoorDash,
-        and architected solutions handling thousands of daily transactions.
-        Let's work together to bring your ideas to life!
-      </motion.p>
-
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
+    <div className="about-section" id="about">
+      <div className="about-me">
+        <h3 className="title">About Me</h3>
+        <p className="para">
+          I am a Senior Full Stack Developer at Guzman y Gomez, Australia,
+          with nearly a decade of experience building scalable, high-performance
+          web applications. I am a technologist at heart who enjoys going from
+          product strategy to hands-on engineering. My background spans
+          WordPress development, full-stack Node.js/React applications, cloud
+          architecture on AWS, and enterprise-level ordering systems processing
+          thousands of daily transactions.
+        </p>
       </div>
-    </>
+    </div>
   );
 };
 
-export default SectionWrapper(About, "about");
+export default About;

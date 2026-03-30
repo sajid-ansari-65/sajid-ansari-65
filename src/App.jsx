@@ -1,34 +1,37 @@
-import { BrowserRouter } from "react-router-dom";
-import {
-  About,
-  Contact,
-  Experience,
-  Hero,
-  Navbar,
-  Tech,
-  StarsCanvas,
-  Works,
-} from "./components";
+import { useEffect, useState } from "react";
+import Navbar from "./components/Navbar";
+import Landing from "./components/Landing";
+import About from "./components/About";
+import Career from "./components/Career";
+import WhatIDo from "./components/WhatIDo";
+import Work from "./components/Work";
+import TechStack from "./components/TechStack";
+import Contact from "./components/Contact";
+import "./App.css";
 
-const App = () => {
+function App() {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setIsLoaded(true), 500);
+  }, []);
+
   return (
-    <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div>
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <div className="relative z-0">
+    <div className={`main-body ${isLoaded ? "main-active" : ""}`}>
+      <Navbar />
+      <div id="smooth-wrapper">
+        <div id="smooth-content">
+          <Landing />
+          <About />
+          <WhatIDo />
+          <Career />
+          <Work />
+          <TechStack />
           <Contact />
-          <StarsCanvas />
         </div>
       </div>
-    </BrowserRouter>
+    </div>
   );
-};
+}
 
 export default App;

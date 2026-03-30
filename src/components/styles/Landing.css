@@ -1,0 +1,106 @@
+.landing-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.landing-container {
+  text-align: center;
+  z-index: 2;
+  padding: 0 20px;
+}
+.landing-intro h2 {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: var(--accentColor);
+  margin-bottom: 15px;
+}
+.landing-intro h1 {
+  font-size: clamp(40px, 10vw, 120px);
+  font-weight: 800;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+.landing-info h3 {
+  font-size: clamp(16px, 3vw, 28px);
+  font-weight: 300;
+  letter-spacing: 3px;
+  opacity: 0.8;
+}
+.landing-info-h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.landing-info-h2 span {
+  font-size: 20px;
+  opacity: 0.5;
+}
+.landing-info-h2 h2 {
+  font-size: clamp(18px, 3vw, 32px);
+  font-weight: 600;
+  color: var(--accentColor);
+}
+.landing-gradient-top,
+.landing-gradient-bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 200px;
+  z-index: 1;
+  pointer-events: none;
+}
+.landing-gradient-top {
+  top: 0;
+  background: linear-gradient(to bottom, var(--backgroundColor), transparent);
+}
+.landing-gradient-bottom {
+  bottom: 0;
+  background: linear-gradient(to top, var(--backgroundColor), transparent);
+}
+/* Animated circles */
+.landing-section::before,
+.landing-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  z-index: 0;
+}
+.landing-section::before {
+  width: 500px;
+  height: 500px;
+  background: var(--accentColor);
+  top: -100px;
+  right: -100px;
+  animation: float1 8s ease-in-out infinite;
+}
+.landing-section::after {
+  width: 400px;
+  height: 400px;
+  background: #a78bfa;
+  bottom: -100px;
+  left: -100px;
+  animation: float2 10s ease-in-out infinite;
+}
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-50px, 50px); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(50px, -50px); }
+}
+@media only screen and (min-width: 1025px) {
+  .landing-intro h2 {
+    font-size: 24px;
+  }
+}

@@ -1,102 +1,51 @@
-import { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import "./styles/Contact.css";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-  const [loading, setLoading] = useState(false);
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-
-    // EmailJS integration - replace with your own service ID, template ID, and public key
-    // For now, we'll use a mailto fallback
-    const mailtoLink = `mailto:sajidansari0605@gmail.com?subject=Portfolio Contact from ${form.name}&body=${form.message}%0A%0AFrom: ${form.email}`;
-    window.open(mailtoLink);
-    setLoading(false);
-    setForm({ name: "", email: "", message: "" });
-    alert("Thank you! Opening email client...");
-  };
-
   return (
-    <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
-      >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+    <div className="contact-section" id="contact">
+      <div className="section-container">
+        <h3 className="title">Get In Touch</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="What's your email address?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
-            <textarea
-              rows={7}
-              name="message"
-              value={form.message}
-              onChange={handleChange}
-              placeholder="What would you like to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
+        <div className="contact-container">
+          <div className="contact-box">
+            <h4>Connect</h4>
+            <a href="https://www.linkedin.com/in/iamsajidansari/" target="_blank" rel="noreferrer" className="contact-link">
+              LinkedIn &mdash; iamsajidansari <MdOutlineArrowOutward />
+            </a>
+            <div className="contact-info">
+              <p>B.Tech in Information Technology</p>
+              <p>UKA Tarsadia University (2012 - 2016)</p>
+            </div>
+          </div>
 
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
-      </motion.div>
+          <div className="contact-box">
+            <h4>Social</h4>
+            <div className="contact-socials">
+              <a href="https://github.com/sajid-ansari-65" target="_blank" rel="noreferrer">
+                GitHub <MdOutlineArrowOutward />
+              </a>
+              <a href="https://www.linkedin.com/in/iamsajidansari/" target="_blank" rel="noreferrer">
+                LinkedIn <MdOutlineArrowOutward />
+              </a>
+              <a href="https://x.com/iamsajid_ansari" target="_blank" rel="noreferrer">
+                Twitter / X <MdOutlineArrowOutward />
+              </a>
+              <a href="mailto:sajidansari0605@gmail.com">
+                Email <MdOutlineArrowOutward />
+              </a>
+            </div>
+          </div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div>
+          <div className="contact-box contact-footer">
+            <h4>Designed & Developed by</h4>
+            <p>Mohammad Sajid Ansari &copy; 2026</p>
+            <p className="contact-location">Surat, Gujarat, India</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export default Contact;
