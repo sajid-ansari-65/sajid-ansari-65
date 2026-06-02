@@ -4,12 +4,12 @@
 
 # Mohammad Sajid Ansari
 
-### Senior Full-Stack Developer · Indie maker behind [Idara Studio](https://idara.studio)
+### Senior Full-Stack Developer · Indie maker behind [Idara Studio](https://idara-studio.vercel.app)
 
 Building small, single-purpose WordPress blocks — and the Next.js sites around them.<br/>
 One plugin, one purpose. No bloat, no tracking. From Surat, India. 🇮🇳
 
-<a href="https://idara.studio"><img src="https://img.shields.io/badge/idara.studio-b45309?style=for-the-badge&logo=safari&logoColor=white" alt="Website" /></a>
+<a href="https://idara-studio.vercel.app"><img src="https://img.shields.io/badge/idara.studio-b45309?style=for-the-badge&logo=safari&logoColor=white" alt="Website" /></a>
 <a href="https://profiles.wordpress.org/sajidansari65/"><img src="https://img.shields.io/badge/WordPress.org-21759B?style=for-the-badge&logo=wordpress&logoColor=white" alt="WordPress.org" /></a>
 <img src="https://komarev.com/ghpvc/?username=sajid-ansari-65&label=Profile%20views&color=b45309&style=for-the-badge" alt="Profile views" />
 
@@ -19,7 +19,7 @@ One plugin, one purpose. No bloat, no tracking. From Surat, India. 🇮🇳
 
 ### 🔭 What I'm building
 
-**[Idara Studio](https://idara.studio)** — a one-person plugin studio crafting focused, lightweight Gutenberg blocks. *"The studio that lights up your editor."*
+**[Idara Studio](https://idara-studio.vercel.app)** — a one-person plugin studio crafting focused, lightweight Gutenberg blocks. *"The studio that lights up your editor."*
 
 - 🟢 **[Idara Reading Time](https://wordpress.org/plugins/idara-reading-time/)** — estimated reading time with an optional scroll progress bar. Live on WordPress.org · FSE-ready · under 25&nbsp;KB · loads only where used.
 - 🔜 **Business Hours · Notice Block · Author Bio** — single-purpose blocks shipping through 2026.
@@ -60,7 +60,7 @@ One plugin, one purpose. No bloat, no tracking. From Surat, India. 🇮🇳
 
 ### 📫 Reach me
 
-- 🌐 **[idara.studio](https://idara.studio)**
+- 🌐 **[idara.studio](https://idara-studio.vercel.app)**
 - 🧩 **WordPress.org** — [@sajidansari65](https://profiles.wordpress.org/sajidansari65/)
 - ✉️ **sajidansari0605@gmail.com**
 
