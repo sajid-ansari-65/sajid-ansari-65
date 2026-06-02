@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://ps.w.org/idara-reading-time/assets/icon-256x256.png" width="88" alt="Idara" />
+<img src="assets/idara-mark.png" width="88" alt="Idara" />
 
 # Mohammad Sajid Ansari
 
@@ -26,7 +26,6 @@ One plugin, one purpose. No bloat, no tracking. From Surat, India. 🇮🇳
 
 **Beyond the studio**
 
-- 💬 **Charcha WP** — an India-first WordPress discussion / Q&A platform (custom theme + OOP-PHP core plugin, Tailwind). v3.0 shipped.
 - 🎮 **S8UL Global Digital HQ** — a Next.js 15 esports portal (BGMI / EWC 2026 data).
 
 ---
