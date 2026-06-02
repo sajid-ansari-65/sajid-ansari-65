@@ -52,10 +52,8 @@ One plugin, one purpose. No bloat, no tracking. From Surat, India. 🇮🇳
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=sajid-ansari-65&show_icons=true&hide_border=true&count_private=true&title_color=b45309&icon_color=b45309&text_color=4a4a55&bg_color=fafaf7" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=sajid-ansari-65&layout=compact&hide_border=true&title_color=b45309&text_color=4a4a55&bg_color=fafaf7" alt="Top languages" />
-
-<img src="https://streak-stats.demolab.com?user=sajid-ansari-65&hide_border=true&background=fafaf7&ring=b45309&fire=b45309&currStreakLabel=b45309&sideLabels=4a4a55&dates=8a8a95&stroke=e8e3da&sideNums=0a0a0f&currStreakNum=0a0a0f&dayLabels=4a4a55" alt="GitHub streak" />
+<img height="165" src="https://sajid-ansari-65.vercel.app/api?username=sajid-ansari-65&show_icons=true&hide_border=true&count_private=true&title_color=b45309&icon_color=b45309&text_color=4a4a55&bg_color=fafaf7" alt="GitHub stats" />
+<img height="165" src="https://sajid-ansari-65.vercel.app/api/top-langs?username=sajid-ansari-65&layout=compact&hide_border=true&title_color=b45309&text_color=4a4a55&bg_color=fafaf7" alt="Top languages" />
 
 </div>
 
