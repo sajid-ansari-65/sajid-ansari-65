@@ -1,0 +1,116 @@
+.career-section {
+  padding: 120px 0;
+  margin-bottom: 80px;
+}
+.career-heading {
+  font-size: 70px;
+  font-weight: 400;
+  background: linear-gradient(to right, #0d9488, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 60px;
+}
+.career-current {
+  margin-bottom: 80px;
+}
+.career-current h3 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--accentColor);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.career-current h4 {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+.career-current a {
+  color: var(--accentColor);
+  text-decoration: underline;
+}
+.career-timeline {
+  position: relative;
+  padding-left: 40px;
+}
+.career-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, var(--accentColor), transparent);
+}
+.career-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.career-dot {
+  position: absolute;
+  left: -48px;
+  top: 50px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accentColor);
+  box-shadow: 0 0 15px var(--accentColor), 0 0 30px rgba(94, 234, 212, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 15px var(--accentColor), 0 0 30px rgba(94, 234, 212, 0.3); }
+  50% { box-shadow: 0 0 25px var(--accentColor), 0 0 50px rgba(94, 234, 212, 0.5); }
+}
+.career-info-box {
+  flex: 1;
+}
+.career-info-box h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.career-info-box p {
+  font-size: 16px;
+  opacity: 0.6;
+  margin-bottom: 5px;
+}
+.career-detail {
+  font-size: 14px !important;
+  opacity: 0.4 !important;
+  max-width: 500px;
+}
+.career-date-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  white-space: nowrap;
+}
+.career-date-box span {
+  font-size: 14px;
+  opacity: 0.5;
+}
+@media only screen and (max-width: 900px) {
+  .career-heading {
+    font-size: 40px;
+  }
+  .career-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .career-date-box {
+    align-items: flex-start;
+  }
+  .career-current h3 {
+    font-size: 20px;
+  }
+  .career-current h4 {
+    font-size: 18px;
+  }
+}
